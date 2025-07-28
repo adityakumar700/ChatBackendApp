@@ -13,12 +13,7 @@ dotenv.config();
 // middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors(
-  {
-    origin: "https://chat-app-frontend-two-weld.vercel.app",
-    credentials: true, 
-  }
-));
+app.use(cors());
 
 const PORT = process.env.PORT || 4001;
 const URI = process.env.MONGODB_URI;

@@ -76,5 +76,5 @@ export const allUsers = async (req, res) => {
     res.status(201).json(filteredUsers);
   } catch (error) {
     console.log("Error in allUsers Controller: " + error);
-  }
+  } 
 };
